@@ -1,6 +1,5 @@
 ﻿using Application.Models;
 using Application.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
@@ -22,6 +21,5 @@ namespace Api.Controllers
         {
             return Ok(await _authService.Login(login));
         }
-
     }
 }

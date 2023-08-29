@@ -1,5 +1,4 @@
-﻿
-using Application.Common;
+﻿using Application.Common;
 using Application.Models;
 using Infrastructure.Authentication;
 using Infrastructure.Entities;
@@ -31,7 +30,6 @@ namespace Application.Services
             }
 
             return new LoginResponse { Token = _jWTTokenGenerator.GenerateToken(contact) };
-
         }
     }
 }

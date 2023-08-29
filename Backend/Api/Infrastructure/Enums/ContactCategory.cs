@@ -1,5 +1,4 @@
-﻿
-namespace Infrastructure.Enums
+﻿namespace Infrastructure.Enums
 {
     public enum ContactCategory
     {

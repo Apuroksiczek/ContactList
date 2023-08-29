@@ -1,5 +1,4 @@
-﻿using Application.Models;
-using FluentValidation;
+﻿using FluentValidation;
 using Infrastructure.Entities;
 using Infrastructure.Enums;
 using System.Text.RegularExpressions;
@@ -32,6 +31,7 @@ namespace Api.Validators
                 && digitRequired.IsMatch(password)
                 && specialCharacterRequired.IsMatch(password);
         }
+
         private bool BeAValidBirthDate(DateTime birthDate)
         {
             return birthDate < DateTime.Now;

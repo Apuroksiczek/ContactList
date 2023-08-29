@@ -22,9 +22,9 @@ namespace Application.Services
             var contact = _mapper.Map<Contact>(newContact);
             contact.Password = StringToSHA.ConvertToSHA(contact.Password);
 
-            var result =  await _contactRepository.Add(contact);
+            var result = await _contactRepository.Add(contact);
             await _contactRepository.SaveChanges();
-            
+
             return result;
         }
 

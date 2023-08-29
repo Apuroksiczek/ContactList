@@ -5,7 +5,7 @@ namespace Infrastructure.DependencyInjection
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddApplicationServices (this IServiceCollection services)
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             services.AddScoped<IContactService, ContactService>();
             services.AddScoped<IAuthService, AuthService>();

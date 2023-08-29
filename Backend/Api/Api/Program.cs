@@ -10,7 +10,8 @@ IConfiguration configuration = new ConfigurationBuilder()
    .Build();
 // Add services to the container.
 
-builder.Services.AddDbContext<ContactDbContext>(options => {
+builder.Services.AddDbContext<ContactDbContext>(options =>
+{
     options.UseSqlServer(configuration.GetConnectionString("MyConnection"));
 });
 

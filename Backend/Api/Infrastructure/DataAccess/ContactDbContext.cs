@@ -11,11 +11,12 @@ namespace Infrastructure.DataAccess
         }
 
         public DbSet<Contact> Contacts { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Contact>()
                 .HasIndex(c => c.Email)
-                .IsUnique(); 
+                .IsUnique();
         }
     }
 }

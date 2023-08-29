@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Common
 {
@@ -18,7 +14,7 @@ namespace Application.Common
                 byte[] hashBytes = sha256.ComputeHash(inputBytes);
 
                 string hashString = BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
-                
+
                 return hashString;
             }
         }

@@ -1,7 +1,6 @@
 ﻿using Api.Validators;
 using Application.Models;
 using Application.Services;
-using FluentValidation;
 using FluentValidation.Results;
 using Infrastructure.Entities;
 using Microsoft.AspNetCore.Mvc;

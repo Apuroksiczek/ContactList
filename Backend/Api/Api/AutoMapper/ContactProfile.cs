@@ -1,7 +1,6 @@
 ﻿using Application.Models;
 using AutoMapper;
 using Infrastructure.Entities;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Api.AutoMapper
 {

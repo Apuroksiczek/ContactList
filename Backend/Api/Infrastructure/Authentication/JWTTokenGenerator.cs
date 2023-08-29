@@ -23,7 +23,6 @@ namespace Infrastructure.Authentication
 
         public string GenerateToken(Contact contact)
         {
-
             var signingCredensials = new SigningCredentials(
                 new SymmetricSecurityKey(
                     Encoding.UTF8.GetBytes(_jwtSettings.Secret)),
